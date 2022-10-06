@@ -12,7 +12,7 @@ class APIFeatures {
             }
         } : {}
 
-        this.query = this.query.fine({ ...keyword });
+        this.query = this.query.find({ ...keyword });
         return this;
     }
 
@@ -24,13 +24,13 @@ class APIFeatures {
 
         //Removing fields from the query
         const removerFields = ['keyword', 'limit', 'page']
-        removerFields.forEach(el => delete queryCopy[e1]);
+        removerFields.forEach(e1 => delete queryCopy[e1]);
 
         // Advance filter for price, rating etc
         let queryStr = JSON.stringify(queryCopy)
         queryStr = queryStr.replace(/\b(gt|gte|lt|lte)b/g, match => `$${match}` )
 
-        this.query= this.query.find(JSON.parse(queryCopy));
+        this.query= this.query.find(JSON.parse(queryStr));
         return this;
     }
 

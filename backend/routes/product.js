@@ -4,24 +4,40 @@ const router = express.Router();
 
 const { getProducts,
         newProduct, 
-        getsingleProduct, 
+        getSingleProduct, 
         updateProduct, 
-        deleteProduct 
+        deleteProduct, 
+        createProductReview,
+        getProductReviews,
+        deleteReview
       } = require('../controllers/productController');
+
+const { isAuthenticatedUser,
+        authorizedRoles 
+      } = require('../middleWares/auth');
 
 // for getting all products
 router.route('/products').get(getProducts);
 
 // for getting a single product
-router.route('/product/:id').get(getsingleProduct);
+router.route('/product/:id').get(getSingleProduct);
 
 // for post a new product
-router.route('/product/new').post(newProduct);
+router.route('/product/new').post(isAuthenticatedUser, authorizedRoles('admin'), newProduct);
 
 // for put a new product
-router.route('/admin/product/:id').put(updateProduct);
+router.route('/admin/product/:id').put(isAuthenticatedUser, authorizedRoles('admin'), updateProduct);
 
 // for deleting a product
-router.route('/admin/product/:id').delete(deleteProduct);
+router.route('/admin/product/:id').delete(isAuthenticatedUser, authorizedRoles('admin'), deleteProduct);
 
-module.exports = router ;  
+// Product Review
+router.route('/review').put(isAuthenticatedUser, createProductReview);
+
+// Get Product Reviews
+router.route('/reviews').get(isAuthenticatedUser, getProductReviews);
+
+// Delete a review
+router.route('/reviews').delete(isAuthenticatedUser, deleteReview);
+
+module.exports = router;  

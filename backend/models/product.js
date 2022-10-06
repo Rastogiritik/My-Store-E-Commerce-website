@@ -67,8 +67,12 @@ const productSchema = new mongoose.Schema({
             'Natural products',
             'Medicine',
             'Outdoor',
-            'camaras'
-
+            'Stationary',
+            'Bags',
+            'LaptopBags',
+            'Heels',
+            'BodyCare',
+            'Grocery'
         ],
         message: 'Please select correct category for your product'
      }
@@ -88,7 +92,11 @@ const productSchema = new mongoose.Schema({
         default: 0
     },
     reviews: [
-        {
+        {   user:{
+                type: mongoose.Schema.ObjectId,
+                ref: 'User',
+                required: true
+            },
             name:{
                 type: String,
                 required: true
@@ -99,17 +107,19 @@ const productSchema = new mongoose.Schema({
             },
             comment: {
                 type: String,
-                // required: true
-
+                required: true
             }
         }
     ],
-
+    user:{
+        type: mongoose.Schema.ObjectId,
+        ref: 'User',
+        required: true
+    },
     createdAt:{
         type: Date,
         default: Date.now
-    }
-    
+    },
 });
 
 module.exports = mongoose.model('Product', productSchema);
