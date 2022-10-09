@@ -1,14 +1,20 @@
 // axios use for geting the data from the backend
 import axios from 'axios';
-import { ALL_PRODUCTS_REQUEST, ALL_PRODUCTS_SUCCESS, ALL_PRODUCTS_FAIL, CLEAR_ERRORS, PRODUCT_DETAILS_REQUEST, PRODUCT_DETAILS_SUCCESS, PRODUCT_DETAILS_FAIL } from '../constants/productConstants';
+import { ALL_PRODUCTS_REQUEST, 
+         ALL_PRODUCTS_SUCCESS, 
+         ALL_PRODUCTS_FAIL, 
+         CLEAR_ERRORS, 
+         PRODUCT_DETAILS_REQUEST, 
+         PRODUCT_DETAILS_SUCCESS, 
+         PRODUCT_DETAILS_FAIL } from '../constants/productConstants';
 
-export const getProducts = () => async(dispatch) => {
+export const getProducts = (keyword='',currentPage = 1) => async (dispatch) => {
     try {
 
         dispatch({ type: ALL_PRODUCTS_REQUEST})
 
         // Sending request to backend 
-        const { data } = await axios.get('/api/v1/products')
+        const { data } = await axios.get(`/api/v1/products?keyWord=${keyword}&page=${currentPage}`)
 
         dispatch({ 
             type: ALL_PRODUCTS_SUCCESS,

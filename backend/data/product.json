@@ -24,7 +24,7 @@
             "url" : "https://res.cloudinary.com/bookit/image/upload/v1614877995/products/61oXGZ60GfL_fixco9.jpg"
         }],
         "category" : "Electronics",
-        "seller" : "Amazon",
+        "seller" : "Flipkart",
         "stock" : 0,
         "numOfReviews" : 2,
         "reviews": []
@@ -39,7 +39,7 @@
             "url" : "https://res.cloudinary.com/bookit/image/upload/v1606231285/products/chairmount_nuubea.jpg"
         }],
         "category" : "Electronics",
-        "seller" : "Amazon",
+        "seller" : "Meesho",
         "stock" : 1,
         "numOfReviews" : 12,
         "reviews": []
@@ -69,13 +69,13 @@
             "url" : "https://res.cloudinary.com/bookit/image/upload/v1606231282/products/airpords_e5cqqr.jpg"
         }],
         "category" : "Electronics",
-        "seller" : "Amazon",
+        "seller" : "Apple",
         "stock" : 122,
         "numOfReviews" : 2671,
         "reviews": []
     },
     {
-        "name" : "Cable Boom Microphone - Volume Control for Playstation PS4 or Xbox",
+        "name" : "Boat Cable Boom Microphone - Volume Control for Playstation PS4 or Xbox",
         "price" : "27.99",
         "description" : "DESIGN INFO - 3.5mm male to 2.5mm male audio cable adapter with Upgraded Flexible, Detachable Boom Mic which also enables rotary Volume Control and Mute Switch. SteelFlex Arm for perfect microphone positioning. INPUT COMPATIBILITY - Devices supporting 3.5mm audio output such as gaming PS4 / Xbox One controller, PC, Laptop, iPhone and Android Phone.",
         "ratings" : 4.1,
@@ -84,7 +84,7 @@
             "url" : "https://res.cloudinary.com/bookit/image/upload/v1606233125/products/eahhtj1bkn1k9gjgd3hn.jpg"
         }],
         "category" : "Accessories",
-        "seller" : "Amazon",
+        "seller" : "Boat",
         "stock" : 1123,
         "numOfReviews" : 6,
         "reviews": []
@@ -99,7 +99,7 @@
             "url" : "https://res.cloudinary.com/bookit/image/upload/v1606231283/products/camera_ridc0i.jpg"
         }],
         "category" : "Cameras",
-        "seller" : "Amazon",
+        "seller" : "Nikon",
         "stock" : 131,
         "numOfReviews" : 222,
         "reviews": []
@@ -114,7 +114,7 @@
             "url" : "https://res.cloudinary.com/bookit/image/upload/v1606231282/products/macbook_o2cj2k.jpg"
         }],
         "category" : "Laptops",
-        "seller" : "Amazon",
+        "seller" : "Apple",
         "stock" : 0,
         "numOfReviews" : 56,
         "reviews": []

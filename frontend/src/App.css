@@ -26,6 +26,12 @@ body {
   border-radius: 5px;
 }
 
+.navbar-brand {
+  background-color: #febd69;
+  padding: 0.4rem 1.8rem;
+  font-family: calibri;
+}
+
 nav {
   background-color: #232f3e;
   padding: 1rem 1rem;

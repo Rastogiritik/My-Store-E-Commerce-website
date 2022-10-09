@@ -5,25 +5,26 @@ import MetaData from '../layout/MetaData'
 import { useAlert } from 'react-alert'
 import { useDispatch, useSelector } from 'react-redux'
 import { getProductDetails, clearErrors } from '../../actions/productAction'
+import { useParams } from 'react-router-dom'
 
 
-
-
-const ProductDetails = ({ match }) => {
+const ProductDetails = () => {
 
     const dispatch = useDispatch();
     const alert = useAlert();
 
+    const params = useParams();
+
     const { loading, error, product } = useSelector(state => state.productDetails)
 
     useEffect(() => {
-        dispatch(getProductDetails(match.params.id))
+        dispatch(getProductDetails(params.id))
 
         if (error) {
             alert.error(error);
             dispatch(clearErrors())
         }
-    }, [dispatch, alert, error, match.params.id])
+    }, [dispatch, alert, error, params.id])
 
 
     return (
@@ -36,7 +37,7 @@ const ProductDetails = ({ match }) => {
                             <Carousel pause='hover'>
                                 {product.images && product.images.map(image => (
                                     <Carousel.Item key={image.public_id}>
-                                        <img className='d-block w-100' src={image.url} alt={product.tittle} />
+                                        <img className='d-block w-100' src={image.url} alt={product.title} />
                                     </Carousel.Item>
                                 ))}
                             </Carousel>

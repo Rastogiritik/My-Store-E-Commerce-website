@@ -1,4 +1,6 @@
 import React from 'react'
+import { Route, Routes } from 'react-router-dom'
+import Search from './Search'
 
 const Navbar = () => {
   return (
@@ -6,23 +8,15 @@ const Navbar = () => {
       <nav className="navbar row">
       <div className="col-12 col-md-3">
         <div className="navbar-brand">
-        <img src= "/logo.png" />
+          {/* Yha mujhe logo add krna hai or yha <img src="" alt=""/> ye lugega iske bdle */}
+        <h3>🛍️My-Store</h3> 
         </div>
       </div>
       <div className="col-12 col-md-6 mt-2 mt-md-0">
-        <div className="input-group">
-          <input
-            type="text"
-            id="search_field"
-            className="form-control"
-            placeholder="Enter Product Name ..."
-          />
-          <div className="input-group-append">
-            <button id="search_btn" className="btn">
-              <i className="fa fa-search" aria-hidden="true"></i>
-            </button>
-          </div>
-        </div>
+        <Routes >       
+          <Route path='/' element={<Search/>} /> 
+        </Routes>
+
       </div>
 
       <div className="col-12 col-md-3 mt-4 mt-md-0 text-center">
