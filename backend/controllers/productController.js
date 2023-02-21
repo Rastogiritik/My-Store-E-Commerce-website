@@ -8,9 +8,9 @@ const ErrorHandler = require('../utils/errorHandler');
 
 
 // Create new product => /api/v1/admin/product/new.
-exports.newProduct = catchAsyncError (async (req, res, next) => {
+exports.newProduct = catchAsyncError(async (req, res, next) => {
     req.body.user = req.user.id;
-    
+
     const product = await Product.create(req.body)
 
     res.status(201).json({
@@ -21,23 +21,28 @@ exports.newProduct = catchAsyncError (async (req, res, next) => {
 
 
 // get all products= /api/v1/products?keyword=apple
-exports.getProducts = catchAsyncError (async (req,res,next) => {
+exports.getProducts = catchAsyncError(async (req, res, next) => {
 
     const resPerPage = 4;
     const productsCount = await Product.countDocuments();
 
     const apiFeatures = new APIFeatures(Product.find(), req.query)
-                        .search()
-                        .filter()
-                        .pagination(resPerPage)
+        .search()
+        .filter()
+        
+    let products = await apiFeatures.query;
+    let filteredProductsCount = products.length;
 
-    const products = await apiFeatures.query; 
-        res.status(200).json({
-            success: true,
-            productsCount,
-            resPerPage,
-            products
-        })
+    apiFeatures.pagination(resPerPage)
+    products = await apiFeatures.query.clone();
+
+    res.status(200).json({
+        success: true,
+        productsCount,
+        resPerPage,
+        filteredProductsCount,
+        products
+    })
 })
 
 // get singel product detail =>  /api/v1/product/:id
@@ -58,11 +63,11 @@ exports.getSingleProduct = catchAsyncError(async (req, res, next) => {
 })
 
 // Update Product  => /api/v1/admin/product/:id
-exports.updateProduct = catchAsyncError (async (req, res, next) => {
+exports.updateProduct = catchAsyncError(async (req, res, next) => {
 
     let product = await Product.findById(res.params.id);
 
-    if(!product){
+    if (!product) {
         return next(new errorHandler('Product not found', 404));
     }
 
@@ -78,11 +83,11 @@ exports.updateProduct = catchAsyncError (async (req, res, next) => {
 })
 
 // Delete product => /api/v1/admin/product/:id
-exports.deleteProduct = catchAsyncError (async (req, res, next) => {
+exports.deleteProduct = catchAsyncError(async (req, res, next) => {
 
     const product = await Product.findById(req.params.id);
 
-    if(!product){
+    if (!product) {
         return next(new errorHandler('Product not found', 404));
     }
 
@@ -120,7 +125,7 @@ exports.createProductReview = catchAsyncError(async (req, res, next) => {
             }
         })
 
-    } 
+    }
     else {
         product.reviews.push(review);
         product.numOfReviews = product.reviews.length

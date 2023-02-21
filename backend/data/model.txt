@@ -1,0 +1,42 @@
+[
+{
+        "name" : " ",
+        "price" : "496.95",
+        "description" : "",
+        "ratings" : 4.7,
+        "images" : [{
+            "public_id" : " ",
+            "url" : " "
+        }],
+        "category" : " ",
+        "seller" : " ",
+        "stock" : 131,
+        "numOfReviews" : 222,
+        "reviews": []
+    },
+    {
+        "name" : " ",
+        "price" : "949.99",
+        "description" : " ",
+        "ratings" : 4.9,
+        "images" : [
+            {
+                "public_id" : " ",
+                "url" : " "
+            },
+            {
+                "public_id" : " ",
+                "url" : " " 
+            },
+            {
+                "public_id" : " ",
+                "url" : " "
+            }
+    ],
+        "category" : " ",
+        "seller" : " ",
+        "stock" : 0,
+        "numOfReviews" : 56,
+        "reviews": []
+    }
+] 

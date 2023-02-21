@@ -5,7 +5,7 @@ const productSchema = new mongoose.Schema({
         type: String,
         required: [true, 'Please enter product name'],
         trim: true,
-        maxLength: [100, 'product name cannot exced 100 characters']
+        maxLength: [400, 'product name cannot exced 100 characters']
     },
     price: {
         type: Number,
@@ -72,7 +72,9 @@ const productSchema = new mongoose.Schema({
             'LaptopBags',
             'Heels',
             'BodyCare',
-            'Grocery'
+            'Grocery',
+            'Watches',
+            'Speaker'
         ],
         message: 'Please select correct category for your product'
      }

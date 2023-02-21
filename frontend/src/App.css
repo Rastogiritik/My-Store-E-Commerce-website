@@ -26,10 +26,18 @@ body {
   border-radius: 5px;
 }
 
-.navbar-brand {
-  background-color: #febd69;
+/* .navbar-brand {
+  
   padding: 0.4rem 1.8rem;
-  font-family: calibri;
+  height: 1rem;
+  width: 1rem;
+} */
+
+.logo {
+  padding: 0.4rem 1.8rem;
+  height: 3.7rem;
+  width: 19rem;
+  
 }
 
 nav {

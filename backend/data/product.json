@@ -45,7 +45,7 @@
         "reviews": []
     },
     {
-        "name" : "Bose QuietComfort 35 II Wireless Bluetooth Headphones",
+        "name" : "boAt QuietComfort 35 II Wireless Bluetooth Headphones",
         "price" : "299.00 ",
         "description" : "What happens when you clear away the noisy distractions of the world? Concentration goes to the next level. You get deeper into your music, your work, or whatever you want to focus on. That’s the power of Bose QuietComfort 35 wireless headphones II. Put them on and get closer to what you’re most passionate about. And that’s just the beginning. QuietComfort 35 wireless headphones II are now enabled with Bose AR",
         "ratings" : 4.5,
@@ -109,10 +109,20 @@
         "price" : "949.99",
         "description" : "Stunning 13.3-inch Retina display with True Tone technology, Backlit Magic Keyboard and Touch ID, Tenth-generation, Intel Core i3 processor, Intel Iris Plus Graphics, Fast SSD storage, 8GB of memory, Stereo speakers with wider stereo sound",
         "ratings" : 4.9,
-        "images" : [{
-            "public_id" : "products/macbook_o2cj2k",
-            "url" : "https://res.cloudinary.com/bookit/image/upload/v1606231282/products/macbook_o2cj2k.jpg"
-        }],
+        "images" : [
+            {
+                "public_id" : "telecomtalk.info/wp-content/uploads/2022",
+                "url" : "https://telecomtalk.info/wp-content/uploads/2022/01/macbook-air-with-m1-chip-still-a-1200x900.jpeg"
+            },
+            {
+                "public_id" : "cdn.shopify.com/s/files/1/0568",
+                "url" : "https://cdn.shopify.com/s/files/1/0568/5942/7015/products/MGN93HN_A_2.jpg?v=1631165226" 
+            },
+            {
+                "public_id" : "5.imimg.com/data5/SELLER/Default/2021",
+                "url" : "https://5.imimg.com/data5/SELLER/Default/2021/11/YM/ZM/PE/20874917/apple-macbook-air-2020-13-m1-8-core-512gb-ssd-16gb-ram-excellent-condition-500x500.jpg"
+            }
+    ],
         "category" : "Laptops",
         "seller" : "Apple",
         "stock" : 0,
@@ -120,28 +130,316 @@
         "reviews": []
     },
     {
-        "name" : "Kauffman Orchards Homegrown McIntosh Apples",
+        "name" : "Titan Grand- Black Luxury Watch",
+        "price" : "1389",
+        "description" : "Titan company commenced operations in 1984 under the name Titan Watches Limited. In 1994, Titan diversified into jewellery with Tanishq and subsequently into eyewear with Titan Eyeplus. In 2005, it launched its youth fashion accessories brand Fastrack. The company is the largest branded jewellery maker in India, with more than 80% of its total revenues coming from the jewellery segment. As of 2022, Titan has a 6% market share in India's jewellery market. As of 2019, it is also the fifth-largest watch manufacturer in the world.",
+        "ratings" : 4.9,
+        "images" : [{
+            "public_id" : "images.pexels.com/photos/8839887",
+            "url" : "https://images.pexels.com/photos/8839887/pexels-photo-8839887.jpeg?auto=compress&cs=tinysrgb&w=600"
+        }],
+        "category" : "Watches",
+        "seller" : "Titan",
+        "stock" : 15,
+        "numOfReviews" : 124,
+        "reviews": []
+    },
+    {
+        "name" : "CPU Cooler - With RGB LED ",
         "price" : "2.75",
-        "description" : "McIntosh is a pretty red/green apple with white flesh Homegrown in Kauffman's orchard in healthy Lancaster County soil McIntosh apples are famous for snacking, pies, salads, and applesauce Protected with soft, high-density foam for safe shipping to your door Not for sale to California, Oregon, or Washington due to state laws governing fresh produce",
+        "description" : "Inside view of black high end custom colorful illuminated bright rainbow RGB LED gaming pc. Computer power hardware and technology concept background. Close-up and inside high performance Desktop PC and water cooling system on CPU socket with multicolored LED RGB neon light show status on working, interior on Computer PC Case and DIY",
         "ratings" : 5,
         "images" : [
             {
-                "public_id" : "products/wmoa49q9e70ze9xtcra2",
-                "url" : "https://res.cloudinary.com/bookit/image/upload/v1606293153/products/wmoa49q9e70ze9xtcra2.jpg"
+                "public_id" : "media.istockphoto.com/id/1386965561",
+                "url" : "https://media.istockphoto.com/id/1386965561/photo/inside-view-black-high-end-custom-colorful-illuminated-bright-rainbow-rgb-led-gaming-pc.jpg?b=1&s=612x612&w=0&k=20&c=oOCp8djl-TUk44icFIim3_zVcGZtHk4uU8S95QDydSo="
             },
             {
-                "public_id" : "products/i0k1wdwi5hrpmzwxvsds",
-                "url" : "https://res.cloudinary.com/bookit/image/upload/v1606293152/products/i0k1wdwi5hrpmzwxvsds.jpg" 
+                "public_id" : "media.istockphoto.com/id/1359210290",
+                "url" : "https://media.istockphoto.com/id/1359210290/photo/close-up-and-inside-high-performance-desktop-pc-and-water-cooling-system-on-cpu-socket-with.jpg?s=612x612&w=0&k=20&c=1Xrw5P81TCwp7CTBy0b4cvDiTyxYlIU4qSzOijcf7c0=" 
             },
             {
-                "public_id" : "products/bshmuo9qisfhz4azvnsd",
-                "url" : "https://res.cloudinary.com/bookit/image/upload/v1606293153/products/bshmuo9qisfhz4azvnsd.jpg"
+                "public_id" : "media.istockphoto.com/id/1338699072",
+                "url" : "https://media.istockphoto.com/id/1338699072/photo/inside-view-of-custom-colorful-illuminated-bright-rainbow-rgb-led-gaming-pc-computer-power.jpg?s=612x612&w=0&k=20&c=ymiIuvH5XaCvdLRJCz989NyGL4qYpjvNrVUacXiHVIA="
             }
     ],
-        "category" : "Food",
-        "seller" : "Kauffman's Fruit Farm & Market",
+        "category" : "Accessories",
+        "seller" : "Lenvo",
         "stock" : 500,
-        "numOfReviews" : 1,
+        "numOfReviews" : 1200,
+        "reviews": []
+    },
+    {
+        "name" : "Boat Airdopes 408 - Feel The Music",
+        "price" : "956.25",
+        "description" : "Enjoy the freedom of wireless music and amp up your fitness regime by bringing home the BoAt Airdopes 402 Wireless Earbuds. Thanks to the 10 mm dynamic drivers, they provide powerful bass and immersive sound quality across any musical genre. Moreover, these wireless earbuds ensure extended usage with the charging case for uninterrupted listening wherever you go.",
+        "ratings" : 3.9,
+        "images" : [
+            {
+                "public_id" : "5.imimg.com/data5/SELLER",
+                "url" : "https://5.imimg.com/data5/SELLER/Default/2021/8/QJ/CP/ZC/1128084/boat-airdopes-408a-1000x1000.jpeg"
+            },
+            {
+                "public_id" : "5.imimg.com/data5/SELLER",
+                "url" : "https://5.imimg.com/data5/SELLER/Default/2021/2/MM/LA/EV/99149733/boat-airdopes-402-500x500.jpg" 
+            },
+            {
+                "public_id" : "assets.tatacliq.com/medias/sys_master",
+                "url" : "https://assets.tatacliq.com/medias/sys_master/images/MP000000007258303_5.jpeg"
+            },
+            {
+                "public_id" : "www.winkart.in/wp-content",
+                "url" : "https://www.winkart.in/wp-content/uploads/2020/12/61BCe8ngWmL._SL1500_.jpg"
+            }
+    ],
+        "category" : "Electronics",
+        "seller" : "Boat",
+        "stock" : 0,
+        "numOfReviews" : 1234,
+        "reviews": []
+    },
+    {
+        "name" : "HP 100 Wired USB Desktop Keyboard  (Black)",
+        "price" : "88.95",
+        "description" : "A durable design that holds up to the demands of every day computing. Find a comfortable position with easy to use height adjustment. A full-size numeric keypad allows for easy data entry. Keys are clearly labeled so that you wont miss a letter and can type easily. Features a full range of 109 keys, including 12 working function keys and 3 hot keys",
+        "ratings" : 4.2,
+        "images" : [
+            {
+                "public_id" : "www.cnet.com/a/img/resize",
+                "url" : "https://www.cnet.com/a/img/resize/c2fb79b15d18f335e85fc4acd72910059cc9758b/hub/2021/08/20/453e37bf-61cb-4e16-ad90-fd822bdc390a/keychron-k3-mechanical-keyboard.jpg?auto=webp&fit=crop&height=900&width=1200"
+            },
+            {
+                "public_id" : "cdn.shopify.com/s/files/1/0332/3917/1117",
+                "url" : "https://cdn.shopify.com/s/files/1/0332/3917/1117/products/4_d2ac7689-5ff0-47fc-9988-01e37f45ac95.jpg?v=1644577195" 
+            }
+    ],
+        "category" : "Electronics",
+        "seller" : "HP",
+        "stock" : 185,
+        "numOfReviews" : 265,
+        "reviews": []
+    },
+    {
+        "name" : "HP M270 Backlit USB Wired Gaming Mouse with 6 Buttons, 4-Speed Customizable 2400 DPI",
+        "price" : "259.99",
+        "description" : "very comfortable to use..... feels great with my palm and the clickyness feels awesome..... build quality nice...... except the soft touch rubber texture easily ripped off giving rough texture after when trying to wipe it clean. Gaming mice have adjustable sensitivity, which is configurable as the number of dots per inch (DPI). The greater the DPI, the farther the cursor moves on screen with the same amount of mouse movement",
+        "ratings" : 3.5,
+        "images" : [
+            {
+                "public_id" : "cdn.shopify.com/s/files",
+                "url" : "https://cdn.shopify.com/s/files/1/1974/9033/products/c717356287bba22a0728358edce48c95_1024x1024.jpg?v=1658743560"
+            },
+            {
+                "public_id" : "egyptlaptop.com/images/detailed",
+                "url" : "https://egyptlaptop.com/images/detailed/19/HP_G200-Wired_Gaming_Mouse-EGYPTLAPTOP-1.jpg" 
+            },
+            {
+                "public_id" : "m.media-amazon.com/images",
+                "url" : "https://m.media-amazon.com/images/I/71JfFnUwqCL._SY450_.jpg"
+            }
+    ],
+        "category" : "Accessories",
+        "seller" : "HP",
+        "stock" : 522,
+        "numOfReviews" : 362,
+        "reviews": []
+    },
+    {
+        "name" : "Wireless Black Wirless Realme Headphone",
+        "price" : "965.99",
+        "description" : " Trendy LED Design, Aux Supported, Micro SD Card and USB Supported, Feel HD-NXI Card Ultra Clear HD, Sound of Realme Experiance, Limited Stock with LED Light Multished, Long Lasting Battery with 48 Hrs. Feel the music and love the music.",
+        "ratings" : 2.9,
+        "images" : [
+            {
+                "public_id" : "5.imimg.com/data5/SELLER",
+                "url" : "https://5.imimg.com/data5/SELLER/Default/2020/11/MQ/NV/HL/60526045/realme-headphone-1000x1000.jpg"
+            },
+            {
+                "public_id" : "sc04.alicdn.com/kf",
+                "url" : "http://sc04.alicdn.com/kf/H37102da68a39493db804af88be92f98bB.jpg" 
+            }
+    ],
+        "category" : "Headphones",
+        "seller" : "Realme",
+        "stock" : 256,
+        "numOfReviews" : 426,
+        "reviews": []
+    },
+    {
+        "name" : "A28 Series 7 Smart Watch With On/Off Logo And Come With Wireless Charger",
+        "price" : "526.99",
+        "description" : "Introducing for the first time ever budget friendly apple series 7 model ;-  a28 watch with apple logo on on/off and original boxi-watch series 7 with original box apple logo appears when power on/off the main feature of smart watch apple series 7 watch size: 44*38*10. 7 mm resolution: 240 *240 pixel bluetooth: support 3. 0, 4. 0 lcd type: ips battery:200mah  wireless megnetic chargerbluetooth to play music can make calls high-quality sound turn the wrist and bright screen various dials --30 different faces heart rate blood pressure and blood oxygen measurement  more functions are waiting for you to experience  higher specification packaging can be used as gifts for friends and relatives package contains user manual watch device  charging cord",
+        "ratings" : 4.9,
+        "images" : [
+            {
+                "public_id" : "5.imimg.com/data5/SELLER",
+                "url" : "https://5.imimg.com/data5/SELLER/Default/2021/11/XK/MQ/JB/114011982/whatsapp-image-2021-11-24-at-12-21-29-pm-1000x1000.jpeg"
+            },
+            {
+                "public_id" : "5.imimg.com/data5/SELLER",
+                "url" : "https://5.imimg.com/data5/SELLER/Default/2021/11/WB/OC/VO/114011982/whatsapp-image-2021-11-24-at-12-21-31-pm-1000x1000.jpeg" 
+            },
+            {
+                "public_id" : "assets.mspimages.in/wp-content",
+                "url" : "https://assets.mspimages.in/wp-content/uploads/2021/05/Apple-Watch-Series-7.jpg"
+            }
+    ],
+        "category" : "Watches",
+        "seller" : "Apple",
+        "stock" : 0,
+        "numOfReviews" : 362,
+        "reviews": []
+    },
+    {
+        "name" : "boAt Rockerz 255 Pro+ | Bluetooth Earphone with 10mm drivers, Up to 40H Nonstop Playback, Type-C charging, ASAP Charge",
+        "price" : "216.99",
+        "description" : "Tap into the world of Rockerz 255 Pro+. The unbeatable boAt Signature Sound comes packed with extra graphene drivers and a bass unlike anything else. Experience the magic of Dual Pairing and instant connectivity with the latest Bluetooth v5.2. These bluetooth earphones can last up to 40 hours in one go and supports Type-C charging. With ASAP Charge, get a playtime of 10H with only 10 minutes of charge. Its IPX7 rating makes it perfect for an adventurous lifestyle as it is made to resist dust and water scares.",
+        "ratings" : 3.5,
+        "images" : [
+            {
+                "public_id" : "cdn.shopify.com/s/files/1/0057",
+                "url" : "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/35ca6350-d6f3-4bc2-a742-01b2c88d80c4_800x.png?v=1625552657"
+            },
+            {
+                "public_id" : "cdn.shopify.com/s/files/1/0057",
+                "url" : "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/R255-pro-plus-FI-1.2_26120694-ce73-4648-914d-cac83344be75_800x.jpg?v=1655378030" 
+            },
+            {
+                "public_id" : "cdn.shopify.com/s/files/1/0057",
+                "url" : "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/R255-pro-plus-FI-2_4d688eb6-2427-457b-9100-1ea64331ea22_800x.jpg?v=1655378032"
+            },
+            {
+                "public_id" : "cdn.shopify.com/s/files/1/0057",
+                "url" : "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/R255-pro-plus-FI-2_4d688eb6-2427-457b-9100-1ea64331ea22_800x.jpg?v=1655378032"
+            },
+            {
+                "public_id" : "cdn.shopify.com/s/files/1/0057",
+                "url" : "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/R255-pro-plus-FI-3.1_7fbe07cb-34d2-4134-8335-907a11d30ede_800x.jpg?v=1655378028"
+            },
+            {
+                "public_id" : "cdn.shopify.com/s/files/1/0057",
+                "url" : "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/R255-pro-plus-FI-5_728249d4-f907-426a-81c0-999c326da907_800x.jpg?v=1655378031"
+            }
+    ],
+        "category" : "Headphones",
+        "seller" : "Boat",
+        "stock" : 521,
+        "numOfReviews" : 741,
+        "reviews": []
+    },
+    {
+        "name" : "boAt Wave Select | Best Sports Edition Smartwatch With 20+ Sports Modes",
+        "price" : "129.99",
+        "description" : "Introducing Wave Select, the watch of all watches. Now pursue your fitness journey in style with its beautiful 1.69 colour HD display and 20+ active sport modes. Maintain a healthy life with its heart-rate & SpO2 monitor and multiple sedentary & hydration alerts. Never miss a beat with a long-lasting 10 day battery life that keeps you connected to your world, always.Experience perfection with a 1.69 colour HD display that features a complete capacitive touch experience. ",
+        "ratings" : 4.9,
+        "images" : [
+            {
+                "public_id" : "cdn.shopify.com/s/files/1/0057",
+                "url" : "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/Untitled-5_600x.png?v=1658294451"
+            },
+            {
+                "public_id" : "cdn.shopify.com/s/files/1/0057",
+                "url" : "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/001_427f42b5-e6df-4fc5-a025-1db1f9eb2117_800x.jpg?v=1660370339" 
+            },
+            {
+                "public_id" : "cdn.shopify.com/s/files/1/0057",
+                "url" : "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/005_a226d1dd-6277-405a-b9a5-031a588f5a9c_800x.jpg?v=1660370339"
+            },
+            {
+                "public_id" : "cdn.shopify.com/s/files/1/0057",
+                "url" : "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/002_ea5f69f6-2cff-4168-9529-7d53f256d32d_800x.jpg?v=1660370339"
+            },
+            {
+                "public_id" : "cdn.shopify.com/s/files/1/0057",
+                "url" : "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/004_8cabd448-5ff8-4227-9d2f-96b1d7c686cd_800x.jpg?v=1660370339"
+            }
+    ],
+        "category" : "Watches",
+        "seller" : "Boat",
+        "stock" : 112,
+        "numOfReviews" : 236,
+        "reviews": []
+    },
+    {
+        "name" : "boAt Stone 170 | Portable Bluetooth Speaker with 5W Immersive HD Sound",
+        "price" : "214.99",
+        "description" : "The game of portability just got a boost with the boAt Stone 170 best bluetooth speaker, flip your scene anywhere anytime with the full 5W’s of power. A compact, lightweight and IPX 6 Water Resistant design makes it the perfect companion for a number of sceneries. Stay prepared with the boAt Stone 170. It is packed with a 1800mAh battery, with a push of up to 6 hours of playtime per listening session. So set the mood and accentuate the vibe with the boAt Stone 170. Pick your method of access with Wireless Bluetooth V5.0 and an SD card slot making it perfect for all situations. Extremely simple to navigate, utilize the integrated controls to access a wide range of functions. This includes True Wireless Function, meaning that you can set up two at the same time.",
+        "ratings" : 5.0,
+        "images" : [{
+            "public_id" : "/cdn.shopify.com/s/files/1/0057",
+            "url" : "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/6700be36-7ba6-4364-afc8-976b53c62a3e_600x.png?v=1624897000"
+        }],
+        "category" : "Speaker",
+        "seller" : "Boat",
+        "stock" : 45,
+        "numOfReviews" : 89,
+        "reviews": []
+    },
+    {
+        "name" : "Stone 500 | Portable Bluetooth Speaker with 10W RMS Stereo Sound, RGB Lights, Bluetooth v5.0, AUX, USB & FM mode",
+        "price" : "450.99",
+        "description" : "Become the life of every party with Stone 500. Experience 10W RMS stereo sound and groove with your gang on your favourite tunes. Double the thump with its TWS functionality that lets you connect & play 2 Stone 500 together. The dynamic RGB lights will add to the vibe of your party as you get transported to a club setting. Its universal connectivity with multiple connectivity modes —Bluetooth v5.0, AUX, USB and FM mode. With a Type-C charging interface & instant voice assistant, this wireless speaker will make your life easier as you enjoy the sound of your choice.  With Stone 500, it is time to #BeTheLimelight.",
+        "ratings" : 2.5,
+        "images" : [
+            {
+                "public_id" : "cdn.shopify.com/s/files/1/0057",
+                "url" : "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main2_8549ad38-acec-45d6-bba4-8b202a9bfdc1_600x.png?v=1646976976"
+            },
+            {
+                "public_id" : "cdn.shopify.com/s/files/1/0057",
+                "url" : "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/S500-FI_Black01_800x.png?v=1659431798" 
+            },
+            {
+                "public_id" : "cdn.shopify.com/s/files/1/0057",
+                "url" : "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/S500-FI_Black03_800x.png?v=1659431798"
+            },
+            {
+                "public_id" : "cdn.shopify.com/s/files/1/0057",
+                "url" : "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/S500-FI_Black04_800x.png?v=1659431798"
+            },
+            {
+                "public_id" : "cdn.shopify.com/s/files/1/0057",
+                "url" : "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/S500-FI_Black05_800x.png?v=1659431798"
+            },
+            {
+                "public_id" : "cdn.shopify.com/s/files/1/0057",
+                "url" : "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/S500-FI_Black06_800x.png?v=1659431798"
+            },
+            {
+                "public_id" : "cdn.shopify.com/s/files/1/0057",
+                "url" : "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/S500-FI_Black02_800x.png?v=1659431798"
+            }
+    ],
+        "category" : "Speaker",
+        "seller" : "Boat",
+        "stock" : 234,
+        "numOfReviews" : 451,
+        "reviews": []
+    },
+    {
+        "name" : "boAt TRebel Blaze | Fast Charging Smart Watch with 1.75 HD display, Slim Metal Design, 100+ Watch Faces and 14 Sports",
+        "price" : "269.99",
+        "description" : "Women, wave the naysayers goodbye with Watch Blaze — everything you need to hustle to your goal, now do it Faster with Blaze. Navigate through your day seamlessly with its Apollo 3 Blue Plus high-performance processor that makes its interface 25% faster. Get on top of everything effortlessly with its 1.75 inch HD display — the largest by boAt. We know your hustle needs power and speed. That's why its Fast Charge technology gives 24HRS of backup with just 10MINS of charge to empower you to dance through life. Keep your fitness in check with heart rate and SpO2 monitoring, daily activity tracker, and 14 sport modes. TRebel Watch Blaze — for boss women like you.",
+        "ratings" : 5.0,
+        "images" : [
+            {
+                "public_id" : "cdn.shopify.com/s/files/1/0057/8938",
+                "url" : "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main3_e305aecd-69d4-4d6d-a6ec-b3133676fc57_600x.png?v=1646394745"
+            },
+            {
+                "public_id" : "cdn.shopify.com/s/files/1/0057/8938",
+                "url" : "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main3.1_46f69d85-75a0-483c-a215-2a29ee068b3c_600x.png?v=1646394746" 
+            },
+            {
+                "public_id" : "cdn.shopify.com/s/files/1/0057/8938",
+                "url" : "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main3.3_9198fbdb-47fc-4ba1-878f-10d3acdb3d9c_600x.png?v=1646394746"
+            }
+    ],
+        "category" : "Watches",
+        "seller" : "Boat",
+        "stock" : 69,
+        "numOfReviews" : 456,
         "reviews": []
     }
+    
 ]
