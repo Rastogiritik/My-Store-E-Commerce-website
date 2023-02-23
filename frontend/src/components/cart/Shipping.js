@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { countries } from 'countries-list';
 
+import CheckOutSteps from './CheckOutSteps';
+
 import { useNavigate } from "react-router-dom";
 import MetaData from "../layout/MetaData";
 import { useDispatch, useSelector } from "react-redux";
@@ -27,13 +29,15 @@ const Shipping = () => {
         e.preventDefault()
 
         dispatch(saveShippingInfo({ address, city, phoneNo, postalCode, country }))
-        navigate('/confirm')
+        navigate("/order/confirm")
     }
 
   return (
     <>
       
       <MetaData title={'Shipping Info'} />
+
+      <CheckOutSteps shipping />
 
       <div className="row wrapper">
                 <div className="col-10 col-lg-5">
