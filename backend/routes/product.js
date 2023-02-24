@@ -9,6 +9,7 @@ const { getProducts,
         deleteProduct, 
         createProductReview,
         getProductReviews,
+        getAdminProducts,
         deleteReview
       } = require('../controllers/productController');
 
@@ -19,11 +20,14 @@ const { isAuthenticatedUser,
 // for getting all products
 router.route('/products').get(getProducts);
 
+// for admin getting all product
+router.route('/admin/products').get(getAdminProducts);
+
 // for getting a single product
 router.route('/product/:id').get(getSingleProduct);
 
 // for post a new product
-router.route('/product/new').post(isAuthenticatedUser, authorizedRoles('admin'), newProduct);
+router.route('/admin/product/new').post(isAuthenticatedUser, authorizedRoles('admin'), newProduct);
 
 // for put a new product
 router.route('/admin/product/:id').put(isAuthenticatedUser, authorizedRoles('admin'), updateProduct);

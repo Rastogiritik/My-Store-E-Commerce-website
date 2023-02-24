@@ -9,6 +9,7 @@ import Home from "./components/Home";
 
 import ProductDetails from "./components/product/ProductDetails";
 
+// shipping imports
 import Cart from "./components/cart/Cart";
 import Shipping from "./components/cart/Shipping";
 import ConfirmOrder from "./components/cart/ConfirmOrder";
@@ -16,8 +17,17 @@ import Payment from "./components/cart/Payment";
 import OrderSuccess from "./components/cart/OrderSuccess";
 
 
+// order imports
 import ListOrders from "./components/order/ListOrders";
+import OrderDetails from "./components/order/OrderDetails";
 
+// admin imports
+import Dashboard from "./components/admin.js/Dashboard";
+import ProductsList from "./components/admin.js/ProductsList";
+import NewProduct from './components/admin.js/NewProduct'
+
+
+// auth and user imports 
 import Login from "./components/user/Login";
 import Register from "./components/user/Register";
 import Profile from "./components/user/Profile";
@@ -35,6 +45,7 @@ import axios  from "axios";
 import { Elements } from "@stripe/react-stripe-js";
 import { loadStripe } from "@stripe/stripe-js";
 
+
 function App() {
   const [stripeApiKey, setStripeApiKey] = useState('');
   
@@ -42,7 +53,6 @@ function App() {
     store.dispatch(loadUser())
     async function getStripeApiKey(){
       const { data } = await axios.get('/api/v1/stripeapi');
-      console.log(data.stripeApiKey);
       setStripeApiKey(data.stripeApiKey)
     }
     getStripeApiKey();
@@ -52,7 +62,7 @@ function App() {
     <Router >
     <div className="App">
       <Navbar />
-
+     
       <div className="container container-fluid">
           <Routes>
             <Route exact path="/" element={<Home />} />
@@ -67,6 +77,7 @@ function App() {
             <Route path="/success" element={<ProtectedRoute> <OrderSuccess /> </ProtectedRoute> } exact /> 
 
             <Route  path="/orders/me"  element={ <ProtectedRoute> <ListOrders /> </ProtectedRoute> } exact /> 
+            <Route  path="/order/:id"  element={ <ProtectedRoute> <OrderDetails /> </ProtectedRoute> } exact /> 
     
 
             <Route exact path="login" element={<Login/>} />
@@ -76,8 +87,13 @@ function App() {
             <Route  path="/me"  element={ <ProtectedRoute> <Profile /> </ProtectedRoute> } exact /> 
             <Route  path="/me/update"  element={ <ProtectedRoute> <UpdateProfile /> </ProtectedRoute> } exact /> 
             <Route  path="/password/update"  element={ <ProtectedRoute> <UpdatePassword /> </ProtectedRoute> } exact /> 
-          </Routes>
+          </Routes>   
       </div>
+        
+            <Routes><Route  path="/dashboard" isAdmin={true}  element={ <ProtectedRoute> <Dashboard /> </ProtectedRoute> } exact /></Routes>
+            <Routes><Route path="/admin/products" isAdmin={true} element={<ProtectedRoute> <ProductsList /> </ProtectedRoute>} exact /></Routes>
+            <Routes><Route path="/admin/product" isAdmin={true} element={<ProtectedRoute> <NewProduct /> </ProtectedRoute>} exact /></Routes>  
+ 
 
       <Footer />
     </div>

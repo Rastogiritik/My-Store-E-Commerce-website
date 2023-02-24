@@ -45,6 +45,18 @@ exports.getProducts = catchAsyncError(async (req, res, next) => {
     })
 })
 
+// get admin all products= /api/v1/admin/products
+exports.getAdminProducts = catchAsyncError(async (req, res, next) => {
+
+    
+    const products = await Product.find();
+
+    res.status(200).json({
+        success: true,
+        products
+    })
+})
+
 // get singel product detail =>  /api/v1/product/:id
 exports.getSingleProduct = catchAsyncError(async (req, res, next) => {
 
