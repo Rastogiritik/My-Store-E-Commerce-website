@@ -40,10 +40,12 @@ import ProtectedRoute from "./components/route/ProtectedRoute";
 import { loadUser } from './actions/userAction'
 import store from './store'
 import axios  from "axios";
+// import { useSelector } from 'react-redux'
 
 // Payment 
 import { Elements } from "@stripe/react-stripe-js";
 import { loadStripe } from "@stripe/stripe-js";
+
 
 
 function App() {
@@ -57,6 +59,8 @@ function App() {
     }
     getStripeApiKey();
   }, [])
+
+  // const { user , loading} = useSelector(state => state.auth)
 
   return (
     <Router >
@@ -95,6 +99,7 @@ function App() {
             <Routes><Route path="/admin/product" isAdmin={true} element={<ProtectedRoute> <NewProduct /> </ProtectedRoute>} exact /></Routes>  
  
 
+      
       <Footer />
     </div>
     </Router>

@@ -2,15 +2,15 @@ import React, { Fragment, useState, useEffect } from 'react'
 
 import MetaData from '../layout/MetaData'
 import Sidebar from './Sidebar'
-
-import { useAlert } from 'react-alert'
-import { useDispatch, useSelector } from "react-redux";
-import { newProduct, clearErrors } from '../../actions/productAction'
-import { NEW_PRODUCT_RESET } from '../../constants/productConstants'
 import { useNavigate } from 'react-router-dom'
 
+import { useAlert } from 'react-alert'
+import { useDispatch, useSelector } from 'react-redux'
+import { newProduct, clearErrors } from '../../actions/productAction'
+import { NEW_PRODUCT_RESET } from '../../constants/productConstants'
+
 const NewProduct = () => {
-    const navigate = useNavigate();
+
     const [name, setName] = useState('');
     const [price, setPrice] = useState(0);
     const [description, setDescription] = useState('');
@@ -18,28 +18,31 @@ const NewProduct = () => {
     const [stock, setStock] = useState(0);
     const [seller, setSeller] = useState('');
     const [images, setImages] = useState([]);
-    const [imagesPreview, setImagesPreview] = useState([]);
+    const [imagesPreview, setImagesPreview] = useState([])
+    const navigate = useNavigate();
 
     const categories = [
-      "Electronics",
-      "Cameras",
-      "Headphones",
-      "WireLess",
-      "Mobile",
-      "Bluetooth",
-      "Microphone",
-      "Laptops",
-      "Remote",
-      "Game",
-      "Accessories",
-      "Watches",
-      "Speaker",
-    ];
+        "Electronics",
+        "Cameras",
+        "Headphones",
+        "WireLess",
+        "Mobile",
+        "Bluetooth",
+        "Microphone",
+        "Laptops",
+        "Remote",
+        "Game",
+        "Accessories",
+        "Watches",
+        "Speaker",
+    ]
 
     const alert = useAlert();
     const dispatch = useDispatch();
 
-    const { loading, error, success } = useSelector(state => state.newProduct);
+    const productNew = useSelector(state => state.newProduct || {});
+
+    const { loading, error, success } = productNew;
 
     useEffect(() => {
 
@@ -94,7 +97,6 @@ const NewProduct = () => {
             reader.readAsDataURL(file)
         })
     }
-
 
     return (
         <Fragment>
