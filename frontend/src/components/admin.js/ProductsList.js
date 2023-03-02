@@ -8,9 +8,8 @@ import Sidebar from './Sidebar'
 
 import { useAlert } from 'react-alert'
 import { useDispatch, useSelector } from 'react-redux'
-import { getAdminProducts, clearErrors } from '../../actions/productAction'
-// import { getAdminProducts, clearErrors,deleteProduct } from '../../actions/productActions'
-// import { DELETE_PRODUCT_RESET } from '../../constants/productConstants'
+import { getAdminProducts, clearErrors, deleteProduct } from '../../actions/productAction'
+import { DELETE_PRODUCT_RESET } from '../../constants/productConstants'
 import { useNavigate } from 'react-router-dom'
 
 const ProductsList = () => {
@@ -20,7 +19,8 @@ const ProductsList = () => {
     const navigate = useNavigate();
 
     const { loading, error, products } = useSelector(state => state.products);
-    // const { error: deleteError,isDeleted} = useSelector(state => state.product);
+    const { error: deleteError, isDeleted} = useSelector(state => state.product);
+
     useEffect(() => {
         dispatch(getAdminProducts());
 
@@ -29,19 +29,18 @@ const ProductsList = () => {
             dispatch(clearErrors())
         }
 
-        // if (deleteError) {
-        //     alert.error(deleteError);
-        //     dispatch(clearErrors())
-        // }
+        if (deleteError) {
+            alert.error(deleteError);
+            dispatch(clearErrors())
+        }
 
-        // if (isDeleted) {
-        //     alert.success('Product deleted successfully');
-        //     navigate('/admin/products');
-        //     dispatch({ type: DELETE_PRODUCT_RESET })
-        // }
+        if (isDeleted) {
+            alert.success('Product deleted successfully');
+            navigate('/admin/products');
+            dispatch({ type: DELETE_PRODUCT_RESET })
+        }
 
-    }, [dispatch, alert, error])
-    // }, [dispatch, alert, error,deleteError,isDeleted,navigate])
+    }, [dispatch, alert, error, deleteError, isDeleted, navigate])
 
     const setProducts = () => {
         const data = {
@@ -84,13 +83,10 @@ const ProductsList = () => {
                     <Link to={`/admin/product/${product._id}`} className="btn btn-primary py-1 px-2">
                         <i className="fa fa-pencil"></i>
                     </Link>
-                    <button className="btn btn-danger py-1 px-2 ml-2" >
+            
+                    <button className="btn btn-danger py-1 px-2 ml-2" onClick={() => deleteProductHandler(product._id)}>
                         <i className="fa fa-trash"></i>
                     </button>
-
-                    {/* <button className="btn btn-danger py-1 px-2 ml-2" onClick={() => deleteProductHandler(product._id)}>
-                        <i className="fa fa-trash"></i>
-                    </button> */}
                 </Fragment>
             })
         })
@@ -98,9 +94,9 @@ const ProductsList = () => {
         return data;
    }
 
-    // const deleteProductHandler = (id) => {    
-    //     dispatch(deleteProduct(id))
-    // }
+    const deleteProductHandler = (id) => {    
+        dispatch(deleteProduct(id))
+    }
     return (
         <Fragment>
             <MetaData title={'All Products'} />

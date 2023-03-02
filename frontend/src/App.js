@@ -25,6 +25,7 @@ import OrderDetails from "./components/order/OrderDetails";
 import Dashboard from "./components/admin.js/Dashboard";
 import ProductsList from "./components/admin.js/ProductsList";
 import NewProduct from './components/admin.js/NewProduct'
+import UpdateProduct from "./components/admin.js/UpdateProduct";
 
 
 // auth and user imports 
@@ -97,6 +98,7 @@ function App() {
             <Routes><Route  path="/dashboard" isAdmin={true}  element={ <ProtectedRoute> <Dashboard /> </ProtectedRoute> } exact /></Routes>
             <Routes><Route path="/admin/products" isAdmin={true} element={<ProtectedRoute> <ProductsList /> </ProtectedRoute>} exact /></Routes>
             <Routes><Route path="/admin/product" isAdmin={true} element={<ProtectedRoute> <NewProduct /> </ProtectedRoute>} exact /></Routes>  
+            <Routes><Route path="/admin/product/:id" isAdmin={true} element={<ProtectedRoute> <UpdateProduct /> </ProtectedRoute>} exact /></Routes>  
  
 
       

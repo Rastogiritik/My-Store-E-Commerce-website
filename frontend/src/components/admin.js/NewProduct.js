@@ -18,7 +18,7 @@ const NewProduct = () => {
     const [stock, setStock] = useState(0);
     const [seller, setSeller] = useState('');
     const [images, setImages] = useState([]);
-    const [imagesPreview, setImagesPreview] = useState([])
+    const [imagesPreview, setImagesPreview] = useState([]);
     const navigate = useNavigate();
 
     const categories = [
