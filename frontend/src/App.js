@@ -26,6 +26,9 @@ import Dashboard from "./components/admin.js/Dashboard";
 import ProductsList from "./components/admin.js/ProductsList";
 import NewProduct from './components/admin.js/NewProduct'
 import UpdateProduct from "./components/admin.js/UpdateProduct";
+import OrderList from "./components/admin.js/OrderList";
+import ProcessOrder from "./components/admin.js/ProcessOrder";
+
 
 
 // auth and user imports 
@@ -54,11 +57,15 @@ function App() {
   
   useEffect(() => {
     store.dispatch(loadUser())
-    async function getStripeApiKey(){
+
+    async function getStripeApiKey() {
       const { data } = await axios.get('/api/v1/stripeapi');
+
       setStripeApiKey(data.stripeApiKey)
     }
+
     getStripeApiKey();
+    
   }, [])
 
   // const { user , loading} = useSelector(state => state.auth)
@@ -99,6 +106,8 @@ function App() {
             <Routes><Route path="/admin/products" isAdmin={true} element={<ProtectedRoute> <ProductsList /> </ProtectedRoute>} exact /></Routes>
             <Routes><Route path="/admin/product" isAdmin={true} element={<ProtectedRoute> <NewProduct /> </ProtectedRoute>} exact /></Routes>  
             <Routes><Route path="/admin/product/:id" isAdmin={true} element={<ProtectedRoute> <UpdateProduct /> </ProtectedRoute>} exact /></Routes>  
+            <Routes><Route path="/admin/orders" isAdmin={true} element={<ProtectedRoute> <OrderList /> </ProtectedRoute>} exact /></Routes>  
+            <Routes><Route path="/admin/order/:id" isAdmin={true} element={<ProtectedRoute> <ProcessOrder /> </ProtectedRoute>} exact /></Routes>
  
 
       
